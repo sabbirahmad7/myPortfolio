@@ -388,7 +388,7 @@ img{
 }
 
 .home__social-icon{
-    font-size: 1.25rem;
+    font-size: 3.00rem;
     color: var(--first-color);
 }
 .home__social-icon:hover{
@@ -518,6 +518,7 @@ img{
 }
 
 .about__description{
+  justify-content: center;
     text-align: center;
     margin-bottom: var(--mb-2-5);
     color: var(--text-color);
@@ -760,8 +761,8 @@ img{
     justify-content: space-around; */
     max-height: 0;
     padding-top: var(--mb-1);
-    overflow: hidden;
-    visibility: hidden;
+    overflow: visible;
+    visibility: visible;
     transform: rotateX(-180deg);
     transform-origin: top center;
     -webkit-backface-visibility: hidden;
@@ -787,6 +788,7 @@ img{
     transform: rotateX(0deg);
     transition: 0.8s transform ease;
 }
+
 .qualification__start{
     display: inline-flex;
     width: 14px;
@@ -1555,4 +1557,18 @@ img{
       .form{
         min-width: 700px;
       }
+
+      .circular-image {
+        
+         /* This makes the image circular */
+        width: 400px;  
+        height: 400px;
+        
+       
+      }
+      .home__welcome{
+      color: rgba(93,72,199,1);
+      
+      }
+    
   }

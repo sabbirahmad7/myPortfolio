@@ -8,8 +8,9 @@ const selectedTheme = localStorage.getItem('selected-theme')
 const selectedIcon = localStorage.getItem('selected-icon')
 
 // We obtain the current theme that the interface has by validating the dark theme class
-const getCurrentTheme = () => document.body.classList.contains(darkTheme)?'dark':'light'
 const getCurrentIcon = () => document.body.classList.contains(iconTheme)?'uil-moon':'uil-sun'
+const getCurrentTheme = () => document.body.classList.contains(darkTheme)?'dark':'light'
+
 
 //We need to validate if the user has previously chosen a topic
 if(selectedTheme){
@@ -69,12 +70,51 @@ console.log("Remove menu profile is working!")
 
 
 new Typewriter('#typewriter', {
-  strings: ['Biplov Jha', 'Web-developer', 'Electrical-Engineer', 'e-Tutor', 'Author', ''],
+  strings: ['Software Developer In Test', 'Automation QA Engineer', 'Api Testing', 'Database Testing'],
   autoStart: true,
   loop: true,
   cursor: "|"
 });
 console.log("Typewriter effect is working!")
+
+//my CV link 
+function handleLinkClick() {
+    var resumeUrl = "assets/file/SabbirAhmad--Resume.pdf";
+    
+    // Open the resume in a new tab
+    window.open(resumeUrl, "_blank");
+    // You can add more code here to perform specific actions
+
+}
+/*
+function linkedinClick(){
+
+    document.getElementById("myLinkedIn").addEventListener("click", function(event) {
+    event.preventDefault();
+    var linkedinURL = "https://www.linkedin.com/in/sabbira7";
+    window.open(linkedinURL, "_blank");
+
+
+
+});
+}
+*/
+function linkedinClick(logo){
+
+    if(logo==="Linkedin"){
+    var linkedinURL = "https://www.linkedin.com/in/sabbira7";
+    window.open(linkedinURL, "_blank");
+    }
+    else 
+    var github = "https://github.com/sabbirahmad7";
+    window.open(github,"_blank");
+
+}
+
+
+
+
+
 
 //===================================== Portfolio Swiper =========================
 
